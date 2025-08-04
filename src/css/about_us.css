@@ -1,11 +1,15 @@
 .yoga-helps {
   text-align: center;
   background-color: #dfebeb;
-  padding: 64px 0;
+}
+
+.yoga-helps .container {
+  padding: 64px 16px;
 }
 
 .helps-title {
   margin: 0 auto;
+  width: 100%;
   max-width: 343px;
   font-weight: 400;
   font-size: 40px;
@@ -156,10 +160,10 @@
 
 @media screen and (min-width: 1336px) {
   .yoga-helps {
-      background-color: #f2fafa;
-      padding: 112px 0;
-    }
-.helps-title {
+    background-color: #f2fafa;
+    padding: 112px 0;
+  }
+  .helps-title {
     font-size: 52px;
   }
 
