@@ -3,8 +3,7 @@
 }
 
 .gallery .container {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 64px 20px;
 }
 
 .titel-gallery {
@@ -25,7 +24,7 @@
   line-height: 1.6;
   text-align: center;
   color: #0d0b0a;
-  width: 335px;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 48px;
 }
