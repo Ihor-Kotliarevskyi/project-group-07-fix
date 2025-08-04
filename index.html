@@ -4,122 +4,1343 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/project-group-07-fix/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Yoga Bloom</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
+      integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&family=Roboto&family=Sarabun:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" crossorigin src="/project-group-07-fix/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-group-07-fix/assets/styles-CFrPtiMb.css">
+    <link rel="stylesheet" crossorigin href="/project-group-07-fix/assets/index-Bc_JTtOy.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/project-group-07-fix/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+    <header class="page-header">
+  <div class="container header-style">
+    <button class="header-menu-btn" data-menu-open type="button">
+      <svg class="burger-btn-icon" width="24" height="24">
+        <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-menu"></use>
+      </svg>
+    </button>
+    <ul class="header-menu-nav-list">
+      <li class="header-menu-nav-item">
+        <a class="header-nav-link active" href="#yoga-classes">Yoga Classes</a>
+      </li>
+      <li class="header-menu-nav-item">
+        <a class="header-nav-link active" href="#team">Team</a>
+      </li>
+      <li class="header-menu-nav-item">
+        <a class="header-nav-link active" href="#testimonials">Testimonials</a>
+      </li>
+      <li class="header-menu-nav-item">
+        <a class="header-nav-link active" href="#pricing">Pricing</a>
+      </li>
+      <li class="header-menu-nav-item">
+        <a class="header-nav-link active" href="#contacts">Contacts</a>
+      </li>
+    </ul>
+    <a class="header-logo" href="./index.html">
+      <svg class="" width="84" height="36">
+        <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <a class="header-anchor-link" href="#pricing"
+      >Join <span class="header-span-wrap">Now</span>
+    </a>
+  </div>
+  <div class="mobile-menu" data-menu>
+    <div class="container mobile-menu-container">
+      <div class="mobile-style">
+        <button class="button-close" data-menu-close type="button">
+          <svg class="button-close-icon" width="12" height="12">
+            <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-close"></use>
+          </svg>
+        </button>
+        <a class="header-logo" href="./index.html">
+          <svg class="" width="84" height="36">
+            <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <a
+          class="header-anchor-link"
+          href="#pricing"
+          target=""
+          rel="noopener noreferrer"
+          >Join <span class="header-span-wrap">Now</span></a
+        >
+      </div>
+      <div class="mobile-menu-list-wrap">
+        <ul class="burger-menu-nav-list">
+          <li class="burger-menu-nav-item">
+            <a
+              class="mobile-nav-link"
+              href="#yoga-classes"
+              target=""
+              data-menu-close-link-1
+              >Yoga Classes</a
+            >
+          </li>
+          <li class="burger-menu-nav-item">
+            <a
+              class="mobile-nav-link"
+              href="#team"
+              target=""
+              data-menu-close-link-2
+              >Team</a
+            >
+          </li>
+          <li class="burger-menu-nav-item">
+            <a
+              class="mobile-nav-link"
+              href="#testimonials"
+              target=""
+              data-menu-close-link-3
+              >Testimonialso</a
+            >
+          </li>
+          <li class="burger-menu-nav-item">
+            <a
+              class="mobile-nav-link"
+              href="#pricing"
+              target=""
+              data-menu-close-link-4
+              >Pricing</a
+            >
+          </li>
+          <li class="burger-menu-nav-item">
+            <a
+              class="mobile-nav-link"
+              href="#contacts"
+              target=""
+              data-menu-close-link-5
+              >Contacts</a
+            >
+          </li>
+        </ul>
+        <a
+          class="header-anchor-link menu"
+          href="#pricing"
+          target=""
+          rel="noopener noreferrer"
+          >Join Now</a
+        >
+      </div>
+    </div>
   </div>
 </header>
 
 
     <main>
       <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/project-group-07-fix/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
+      <section class="hero">
+  <div class="container hero-container">
+    <picture class="hero-image">
+      <source
+        media="(max-width: 767px)"
+        srcset="/project-group-07-fix/assets/placeholder-image_1x_mob-qmJr4I1i.jpg 1x, /project-group-07-fix/assets/placeholder-image_2x_mob-BerbuE2A.jpg 2x"
+      />
+
+      <source
+        media="(max-width: 1335px)"
+        srcset="/project-group-07-fix/assets/placeholder-image_1x_tab-DTvoQxaE.jpg 1x, /project-group-07-fix/assets/placeholder-image_2x_tab-Bl_aLO0R.webp 2x"
+      />
+
+      <source
+        media="(min-width: 1336px)"
+        srcset="/project-group-07-fix/assets/placeholder-image_1x_pc-BdE0wrD0.webp 1x, /project-group-07-fix/assets/placeholder-image_2x_pc-BdCy8z5x.webp 2x"
+      />
+
+      <img src="/project-group-07-fix/assets/placeholder-image_1x_pc-BdE0wrD0.webp" alt="Yoga" />
+    </picture>
+
+    <div class="hero-content">
+      <div class="hero-title-container">
+        <h1 class="hero-title">Transform Your Life with Our Yoga Clases</h1>
+      </div>
+      <div class="hero-description">
+        <p class="hero-text">
+          Discover the harmony of mind and body through our expertly designed
+          yoga programs. Join a community dedicated to wellness and personal
+          growth.
+        </p>
+        <div class="hero-buttons">
+          <a class="button-to-pricing" href="#pricing">Join Now</a>
+          <a class="button-to-gallery" href="#gallery">Learn More</a>
+        </div>
+      </div>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
   </div>
 </section>
 
-      <article class="badges">
+      <section class="yoga-classes container" id="yoga-classes">
   <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
+    <p class="explore-text">Explore</p>
+
+    <div class="yoga-classes-content">
+      <h2 class="yoga-classes-title">
+        Discover Our Most Popular Yoga Programs
+      </h2>
+      <p class="yoga-classes-text">
+        Join our community and elevate your practice with our expertly designed
+        yoga programs. Each course is tailored to meet various skill levels and
+        personal goals.
+      </p>
+    </div>
+    <ul class="yoga-classes-list">
+      <li class="yoga-classes-item">
+        <picture>
+          <source
+            media="(min-width: 1336px)"
+            srcset="/project-group-07-fix/assets/beginner_yoga_1x_pc-B0M5mc7W.jpg 1x, /project-group-07-fix/assets/beginner_yoga_2x_pc-6oPy36bh.webp 2x"
+          />
+
+          <source
+            media="(min-width: 768px)"
+            srcset="/project-group-07-fix/assets/beginner_yoga_1x_tab-CXqqGB94.jpg 1x, /project-group-07-fix/assets/beginner_yoga_2x_tab-D5BioBlH.jpg 2x"
+          />
+
+          <source
+            media="(max-width: 767px)"
+            srcset="/project-group-07-fix/assets/beginner_yoga_1x_mob-j9OsYRuB.jpg 1x, /project-group-07-fix/assets/beginner_yoga_2x_mob-C3-xjS-n.jpg 2x"
+          />
+          <img
+            class="yoga-classes-img"
+            src="/project-group-07-fix/assets/beginner_yoga_1x_pc-B0M5mc7W.jpg"
+            alt="Beginner"
+          />
+        </picture>
+        <div class="yoga-classes-content">
+          <h3 class="yoga-classes-item-title">
+            Beginner Yoga: Foundations for New Practitioners
+          </h3>
+          <p class="yoga-classes-text">
+            Learn the basics of yoga in a supportive environment.
+          </p>
+        </div>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
+      <li class="yoga-classes-item">
+        <picture>
+          <source
+            media="(min-width: 1336px)"
+            srcset="/project-group-07-fix/assets/vinyasa_flow_1x_pc-De-h5HFV.jpg 1x, /project-group-07-fix/assets/vinyasa_flow_2x_pc-BN_cIYND.jpg 2x"
+          />
+
+          <source
+            media="(min-width: 768px)"
+            srcset="/project-group-07-fix/assets/vinyasa_flow_1x_tab-BldlNz74.jpg 1x, /project-group-07-fix/assets/vinyasa_flow_2x_tab-gELUYxHP.jpg 2x"
+          />
+
+          <source
+            media="(max-width: 767px)"
+            srcset="/project-group-07-fix/assets/vinyasa_flow_1x_mob--zSz_6Ap.jpg 1x, /project-group-07-fix/assets/vinyasa_flow_2x_mob-sVyNNIbx.jpg 2x"
+          />
+          <img
+            class="yoga-classes-img"
+            src="/project-group-07-fix/assets/vinyasa_flow_1x_pc-De-h5HFV.jpg"
+            alt="Vinyasa"
+          />
+        </picture>
+        <div class="yoga-classes-content">
+          <h3 class="yoga-classes-item-title">
+            Vinyasa Flow: Energize Your Body and Mind
+          </h3>
+          <p class="yoga-classes-text">
+            Experience a dynamic sequence that connects breath and movement.
+          </p>
+        </div>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
+      <li class="yoga-classes-item item-large">
+        <picture>
+          <source
+            media="(min-width: 1336px)"
+            srcset="/project-group-07-fix/assets/restorative_yoga_1x_pc-uVBlXEGp.jpg 1x, /project-group-07-fix/assets/restorative_yoga_2x_pc-ComSCuZm.jpg 2x"
+          />
+
+          <source
+            media="(min-width: 768px)"
+            srcset="/project-group-07-fix/assets/restorative_yoga_1x_tab-CZVfuW_-.jpg 1x, /project-group-07-fix/assets/restorative_yoga_2x_tab-TziTs8vP.jpg 2x"
+          />
+
+          <source
+            media="(max-width: 767px)"
+            srcset="data:image/jpeg;base64,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 1x, /project-group-07-fix/assets/restorative_yoga_2x_mob-CJ59X7hx.jpg 2x"
+          />
+
+          <img
+            class="yoga-classes-img"
+            src="/project-group-07-fix/assets/restorative_yoga_1x_pc-uVBlXEGp.jpg"
+            alt="Restorative"
+          />
+        </picture>
+        <div class="yoga-classes-content">
+          <h3 class="yoga-classes-item-title">
+            Restorative Yoga: Deep Relaxation and Healing
+          </h3>
+          <p class="yoga-classes-text">
+            Unwind and rejuvenate with gentle poses and mindfulness.
+          </p>
+        </div>
+      </li>
+    </ul>
+    <div class="button-wrapper">
+      <a
+        class="yoga-classes-anchor-link"
+        href="#pricing"
+        rel="noopener noreferrer"
+        >Join <span class="yoga-classes-span-wrap">Now</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+      <section id="team" class="team-section">
+  <div class="container">
+    <p class="team-subtitle">Meet</p>
+    <h2 class="team-title">Our Team</h2>
+    <p class="team-paragraph">
+      Dedicated professionals passionate about yoga and wellness.
+    </p>
+    <ul class="team-grid">
+      <!-- 1 -->
+      <li class="team-card">
+        <picture class="team-picture">
+          <source
+            media="(min-width: 1336px)"
+            srcset="/project-group-07-fix/assets/liam_johnson_1x_pc-Cg82uRzO.jpg 1x, /project-group-07-fix/assets/liam_johnson_2x_pc-WqEenXC4.jpg 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            type="image/webp"
+            srcset="/project-group-07-fix/assets/liam_johnson_1x_tab-DaHwU5c4.jpg 1x, /project-group-07-fix/assets/liam_johnson_2x_tab-l7ImNdEY.webp 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/project-group-07-fix/assets/liam_johnson_1x_mob-DzamUO_V.jpg 1x, /project-group-07-fix/assets/liam_johnson_2x_mob-0u-ehn6r.jpg 2x"
+          />
+          <img
+            class="team-img"
+            src="/project-group-07-fix/assets/liam_johnson_1x_pc-Cg82uRzO.jpg"
+            alt="Liam Johnson"
+            loading="lazy"
+          />
+        </picture>
+        <h3 class="team-name">Liam Johnson</h3>
+        <p class="team-role">Yoga Instructor</p>
+        <p class="team-desc">
+          Liam specializes in mindfulness and stress reduction techniques
+          through guided meditation.
+        </p>
+        <ul class="team-social">
+          <li class="team-social-item">
+            <a
+              class="team-social-link link-active"
+              href="http://www.linkedin.com/"
+              target="_blank"
+            >
+              <svg width="24" height="24">
+                <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-social-item">
+            <a
+              class="team-social-link link-active"
+              href="https://www.instagram.com/"
+              target="_blank"
+            >
+              <svg width="24" height="24">
+                <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <!-- 2 -->
+      <li class="team-card">
+        <picture class="team-picture">
+          <source
+            media="(min-width: 1336px)"
+            srcset="/project-group-07-fix/assets/emma_stone_1x_pc-CFQZ0YMs.jpg 1x, /project-group-07-fix/assets/emma_stone_2x_pc-BcHbvM9l.jpg 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/project-group-07-fix/assets/emma_stone_1x_tab-BkGC6F-U.jpg 1x, /project-group-07-fix/assets/emma_stone_2x_tab-Dsqp8GSi.jpg 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/project-group-07-fix/assets/emma_stone_1x_mob-BvQ087bP.jpg 1x, /project-group-07-fix/assets/emma_stone_2x_mob-D7es6zIR.jpg 2x"
+          />
+          <img
+            class="team-img"
+            src="/project-group-07-fix/assets/emma_stone_1x_pc-CFQZ0YMs.jpg"
+            alt="Emma Stone"
+            loading="lazy"
+          />
+        </picture>
+        <h3 class="team-name">Emma Stone</h3>
+        <p class="team-role">Meditation Coach</p>
+        <p class="team-desc">
+          Emma has over 10 years of experience in Hatha and Vinyasa yoga.
+        </p>
+        <ul class="team-social">
+          <li class="team-social-item">
+            <a
+              class="team-social-link link-active"
+              href="http://www.linkedin.com/"
+              target="_blank"
+            >
+              <svg width="24" height="24">
+                <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <!-- 3 -->
+      <li class="team-card">
+        <picture class="team-picture">
+          <source
+            media="(min-width: 1336px)"
+            srcset="/project-group-07-fix/assets/sophia_lee_1x_pc-BVZlXveH.jpg 1x, /project-group-07-fix/assets/sophia_lee_2x_pc-CL5DKq1y.jpg 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/project-group-07-fix/assets/sophia_lee_1x_tab-C2khBDm7.jpg 1x, /project-group-07-fix/assets/sophia_lee_2x_tab-Cqe0gmij.jpg 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/project-group-07-fix/assets/sophia_lee_1x_mob-hUGtZAXk.jpg 1x, /project-group-07-fix/assets/sophia_lee_2x_mob-CG3be3qK.jpg 2x"
+          />
+          <img
+            class="team-img"
+            src="/project-group-07-fix/assets/sophia_lee_1x_pc-BVZlXveH.jpg"
+            alt="Sophia Lee"
+            loading="lazy"
+          />
+        </picture>
+        <h3 class="team-name">Sophia Lee</h3>
+        <p class="team-role">Pilates Trainer</p>
+        <p class="team-desc">
+          Sophia combines Pilates with yoga for a holistic fitness approach.
+        </p>
+        <ul class="team-social">
+          <li class="team-social-item">
+            <a
+              class="team-social-link link-active"
+              href="https://www.instagram.com/"
+              target="_blank"
+            >
+              <svg width="24" height="24">
+                <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <!-- 4 -->
+      <li class="team-card">
+        <picture class="team-picture">
+          <source
+            media="(min-width: 1336px)"
+            srcset="/project-group-07-fix/assets/noah_brown_1x_pc-mFe8XYUi.jpg 1x, /project-group-07-fix/assets/noah_brown_2x_pc-pxo-mCyg.jpg 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/project-group-07-fix/assets/noah_brown_1x_tab-IWWDluxp.jpg 1x, /project-group-07-fix/assets/noah_brown_2x_tab-PNQ652mM.jpg 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/project-group-07-fix/assets/noah_brown_1x_mob-CNvIM2Hu.jpg 1x, /project-group-07-fix/assets/noah_brown_2x_mob-phvbyPoW.jpg 2x"
+          />
+          <img
+            class="team-img"
+            src="/project-group-07-fix/assets/noah_brown_1x_pc-mFe8XYUi.jpg"
+            alt="Noah Brown"
+            loading="lazy"
+          />
+        </picture>
+        <h3 class="team-name">Noah Brown</h3>
+        <p class="team-role">Yoga Therapist</p>
+        <p class="team-desc">
+          Noah focuses on therapeutic yoga to aid recovery and enhance
+          well‑being.
+        </p>
+        <ul class="team-social">
+          <li class="team-social-item">
+            <a
+              class="team-social-link link-active"
+              href="http://www.linkedin.com/"
+              target="_blank"
+            >
+              <svg width="24" height="24">
+                <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <!-- 5 -->
+      <li class="team-card">
+        <picture class="team-picture">
+          <source
+            media="(min-width: 1336px)"
+            srcset="/project-group-07-fix/assets/ava_green_1x_pc-B4VNpWrs.jpg 1x, /project-group-07-fix/assets/ava_green_2x_pc-CMJHcMPT.jpg 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            type="image/webp"
+            srcset="/project-group-07-fix/assets/ava_green_1x_tab-DGNdoOeu.jpg 1x, /project-group-07-fix/assets/ava_green_2x_tab-B7UXaV7F.webp 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/project-group-07-fix/assets/ava_green_1x_mob-B_0ESd9Z.jpg 1x, /project-group-07-fix/assets/ava_green_2x_mob-cPSYb2WK.jpg 2x"
+          />
+          <img
+            class="team-img"
+            src="/project-group-07-fix/assets/ava_green_1x_pc-B4VNpWrs.jpg"
+            alt="Ava Green"
+            loading="lazy"
+          />
+        </picture>
+        <h3 class="team-name">Ava Green</h3>
+        <p class="team-role">Fitness Trainer</p>
+        <p class="team-desc">
+          Ava integrates strength training with yoga to promote overall fitness.
+        </p>
+        <ul class="team-social">
+          <li class="team-social-item">
+            <a
+              class="team-social-link link-active"
+              href="https://www.facebook.com/"
+              target="_blank"
+            >
+              <svg width="24" height="24">
+                <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-social-item">
+            <a
+              class="team-social-link link-active"
+              href="https://www.instagram.com/"
+              target="_blank"
+            >
+              <svg width="24" height="24">
+                <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-social-item">
+            <a
+              class="team-social-link link-active"
+              href="http://www.linkedin.com/"
+              target="_blank"
+            >
+              <svg width="24" height="24">
+                <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <!-- 6 -->
+      <li class="team-card">
+        <picture class="team-picture">
+          <source
+            media="(min-width: 1336px)"
+            srcset="/project-group-07-fix/assets/clark_thomas_1x_pc-MXqBwMms.jpg 1x, /project-group-07-fix/assets/clark_thomas_2x_pc-BlQeKte-.jpg 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/project-group-07-fix/assets/clark_thomas_1x_tab-Bznz-wf3.jpg 1x, /project-group-07-fix/assets/clark_thomas_2x_tab-BkTQVKJe.jpg 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/project-group-07-fix/assets/clark_thomas_1x_mob-CZAkyc3c.jpg 1x, /project-group-07-fix/assets/clark_thomas_2x_mob-Lx2MGttF.jpg 2x"
+          />
+          <img
+            class="team-img"
+            src="/project-group-07-fix/assets/clark_thomas_1x_pc-MXqBwMms.jpg"
+            alt="Clark Thomas"
+            loading="lazy"
+          />
+        </picture>
+        <h3 class="team-name">Clark Thomas</h3>
+        <p class="team-role">Fitness Trainer</p>
+        <p class="team-desc">
+          Clark specializes in mindfulness and stress reduction techniques
+          through guided meditation.
+        </p>
+        <ul class="team-social">
+          <li class="team-social-item">
+            <a
+              class="team-social-link link-active"
+              href="https://www.facebook.com/"
+              target="_blank"
+            >
+              <svg width="24" height="24">
+                <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-social-item">
+            <a
+              class="team-social-link link-active"
+              href="https://www.instagram.com/"
+              target="_blank"
+            >
+              <svg width="24" height="24">
+                <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </li>
     </ul>
   </div>
-</article>
+</section>
+
+      <section class="gallery" id="gallery">
+  <div class="container">
+    <h2 class="titel-gallery">Breathe in the Space</h2>
+    <p class="page-gallery">
+      Step inside YogaBloom and feel the calm. Explore our serene studio and the
+      peaceful moments our community shares during each session.
+    </p>
+    <div class="container-gallery">
+      <ul class="foto-list-gallery">
+        <li class="list-gallery">
+          <picture>
+            <source
+              media="(min-width: 1336px)"
+              srcset="/project-group-07-fix/assets/first_1x_pc-d1L6TLe-.jpg 1x, /project-group-07-fix/assets/first_2x_pc-DiJA2Gpg.webp 2x"
+            />
+
+            <source
+              media="(min-width: 768px)"
+              srcset="/project-group-07-fix/assets/first_1x_tab-uaeWE20j.jpg 1x, /project-group-07-fix/assets/first_2x_tab-Dy4JHkhO.jpg 2x"
+            />
+
+            <source
+              media="(max-width: 767px)"
+              srcset="/project-group-07-fix/assets/first_1x_mob-BCuAUiU7.jpg 1x, /project-group-07-fix/assets/first_2x_mob-CldVE6ak.jpg 2x"
+            />
+            <img
+              class="img-gallery"
+              src="/project-group-07-fix/assets/first_1x_pc-d1L6TLe-.jpg"
+              alt="Yoga"
+            />
+          </picture>
+        </li>
+        <li class="list-gallery">
+          <picture>
+            <source
+              media="(min-width: 1336px)"
+              srcset="/project-group-07-fix/assets/second_1x_pc-DbIMo_n9.jpg 1x, /project-group-07-fix/assets/second_2x_pc-CHWvbjZG.webp 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/project-group-07-fix/assets/second_1x_tab-DYVxRTOC.jpg 1x, /project-group-07-fix/assets/second_2x_tab-DgJJWP6d.jpg 2x"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/project-group-07-fix/assets/second_1x_mob-E8IXOuD3.jpg 1x, /project-group-07-fix/assets/second_2x_mob-DXcelQbv.jpg 2x"
+            />
+            <img
+              class="img-gallery"
+              src="/project-group-07-fix/assets/second_1x_pc-DbIMo_n9.jpg"
+              alt="Yoga"
+            />
+          </picture>
+        </li>
+        <li class="list-gallery">
+          <picture>
+            <source
+              media="(min-width: 1336px)"
+              srcset="/project-group-07-fix/assets/third_1x_pc-_DDT-lQ5.jpg 1x, /project-group-07-fix/assets/third_2x_pc-BIVwlC-k.webp 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/project-group-07-fix/assets/third_1x_tab-CMU178Yu.jpg 1x, /project-group-07-fix/assets/third_2x_tab-Bi10iPiQ.jpg 2x"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/project-group-07-fix/assets/third_1x_mob-B4pv5xFg.jpg 1x, /project-group-07-fix/assets/third_2x_mob-A2XwK6nU.jpg 2x"
+            />
+            <img
+              class="img-gallery"
+              src="/project-group-07-fix/assets/third_1x_pc-_DDT-lQ5.jpg"
+              alt="Yoga Room"
+            />
+          </picture>
+        </li>
+        <li class="list-gallery">
+          <picture>
+            <source
+              media="(min-width: 1336px)"
+              srcset="/project-group-07-fix/assets/fourth_1x_pc-BKDWc1Cb.jpg 1x, /project-group-07-fix/assets/fourth_2x_pc-Bzf5EB-A.webp 2x"
+            />
+
+            <source
+              media="(min-width: 768px)"
+              srcset="/project-group-07-fix/assets/fourth_1x_tab-VZHuwwz-.jpg 1x, /project-group-07-fix/assets/fourth_2x_tab-Cxa6ku0j.jpg 2x"
+            />
+
+            <source
+              media="(max-width: 767px)"
+              srcset="/project-group-07-fix/assets/fourth_1x_mob-N6gYIKwE.jpg 1x, /project-group-07-fix/assets/fourth_2x_mob-DFd0-KAx.jpg 2x"
+            />
+            <img
+              class="img-gallery"
+              src="/project-group-07-fix/assets/fourth_1x_pc-BKDWc1Cb.jpg"
+              alt="Yoga Room"
+            />
+          </picture>
+        </li>
+        <li class="list-gallery">
+          <picture>
+            <source
+              media="(min-width: 1336px)"
+              srcset="/project-group-07-fix/assets/fifth_1x_pc-Zcsje0Xg.jpg 1x, /project-group-07-fix/assets/fifth_2x_pc-l_e22GuL.webp 2x"
+            />
+
+            <source
+              media="(min-width: 768px)"
+              srcset="/project-group-07-fix/assets/fifth_1x_tab-CIk4G7ff.jpg 1x, /project-group-07-fix/assets/fifth_2x_tab-bNRQLa_p.jpg 2x"
+            />
+
+            <source
+              media="(max-width: 767px)"
+              srcset="/project-group-07-fix/assets/fifth_1x_mob-DoCF8lDz.jpg 1x, /project-group-07-fix/assets/fifth_2x_mob-CqdUpwmc.jpg 2x"
+            />
+            <img
+              class="img-gallery"
+              src="/project-group-07-fix/assets/fifth_1x_pc-Zcsje0Xg.jpg"
+              alt="Yoga"
+            />
+          </picture>
+        </li>
+        <li class="list-gallery">
+          <picture>
+            <source
+              media="(min-width: 1336px)"
+              srcset="/project-group-07-fix/assets/sixth_1x_pc-CCBDpb-y.jpg 1x, /project-group-07-fix/assets/sixth_2x_pc-C7q4c9pu.webp 2x"
+            />
+
+            <source
+              media="(min-width: 768px)"
+              srcset="/project-group-07-fix/assets/sixth_1x_tab-DPvbYpkl.jpg 1x, /project-group-07-fix/assets/sixth_2x_tab-DKCs7sKK.jpg 2x"
+            />
+
+            <source
+              media="(max-width: 767px)"
+              srcset="/project-group-07-fix/assets/sixth_1x_mob-CGazhAQd.jpg 1x, /project-group-07-fix/assets/sixth_2x_mob-CtbLhsNq.jpg 2x"
+            />
+            <img
+              class="img-gallery"
+              src="/project-group-07-fix/assets/sixth_1x_pc-CCBDpb-y.jpg"
+              alt="Yoga"
+            />
+          </picture>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="yoga-helps">
+  <div class="container">
+    <h2 class="helps-title">Why Yoga Helps You</h2>
+    <p class="helps-subtitle">
+      Four science-backed reasons to start your journey today
+    </p>
+    <ul class="helps-list">
+      <li class="helps-item">
+        <h3 class="helps-item-title">1. Reduces Stress & Anxiety</h3>
+        <p class="helps-text">
+          Regular yoga practice lowers cortisol levels and calms the nervous
+          system — helping you feel more grounded, focused, and emotionally
+          balanced.
+        </p>
+      </li>
+      <li class="helps-item">
+        <h3 class="helps-item-title">2. Builds Strength & Flexibility</h3>
+        <p class="helps-text">
+          Yoga gently tones your body while increasing mobility and posture
+          awareness — without strain or pressure. Great for beginners and
+          experienced movers alike.
+        </p>
+      </li>
+      <li class="helps-item">
+        <h3 class="helps-item-title">3. Improves Sleep & Energy</h3>
+
+        <p class="helps-text">
+          Mindful movement and breathing techniques improve sleep quality and
+          leave you feeling more refreshed, focused, and energized throughout
+          the day.
+        </p>
+      </li>
+      <li class="helps-item">
+        <h3 class="helps-item-title">4. Boosts Mental Clarity & Focus</h3>
+        <p class="helps-text">
+          Yoga encourages present-moment awareness. Through mindful movement and
+          breathwork, it sharpens concentration, improves memory, and clears
+          mental fog.
+        </p>
+      </li>
+    </ul>
+    <a href="#pricing" class="btn btn-helps">
+      <span class="btn-helps-mobile">Join</span>
+      <span class="btn-helps-desktop">Join Now</span>
+    </a>
+  </div>
+</section>
+
+      <section class="testimonials" id="testimonials">
+  <div class="container testi-container">
+    <h2 class="testi-title">Testimonials</h2>
+    <p class="testi-title-text">What our happy clients say</p>
+    <ul class="testi-list">
+      <li class="testi-list-item">
+        <div class="testi-list-container-text">
+          <p class="testi-list-item-text">
+            YogaBloom is a true sanctuary for the mind and body. The classes are
+            thoughtfully guided, the atmosphere is calming, and every session
+            leaves me feeling more centered, flexible, and recharged. Highly
+            recommended for anyone seeking balance and inner peace.
+          </p>
+        </div>
+        <div class="testi-container-card">
+          <img
+            class="testi-container-card-foto"
+            srcset="/project-group-07-fix/assets/donna_norman_1x-CqEJ2WRt.png 1x, /project-group-07-fix/assets/donna_norman_2x-D3qD4NBr.png 2x"
+            src="/project-group-07-fix/assets/donna_norman_1x-CqEJ2WRt.png"
+            alt="Portrait of Donna Norman"
+          />
+          <h3 class="testi-container-card-title">Donna Norman</h3>
+          <p class="testi-container-card-text">Yoga Enthusiast</p>
+        </div>
+      </li>
+      <li class="testi-list-item">
+        <div class="testi-list-container-text">
+          <p class="testi-list-item-text">
+            I’ve tried many yoga studios, but YogaBloom stands out with its
+            welcoming energy and inspiring instructors. Every class feels like a
+            journey inward. It’s now my favorite part of the week.
+          </p>
+        </div>
+        <div class="testi-container-card">
+          <img
+            class="testi-container-card-foto"
+            srcset="/project-group-07-fix/assets/sophie_delgado_1x-DaMODsGV.png 1x, /project-group-07-fix/assets/sophie_delgado_2x-DVv7MfYk.png 2x"
+            src="/project-group-07-fix/assets/sophie_delgado_1x-DaMODsGV.png"
+            alt="Portrait of Sophie Delgado"
+          />
+          <h3 class="testi-container-card-title">Sophie Delgado</h3>
+          <p class="testi-container-card-text">Marketing Specialist</p>
+        </div>
+      </li>
+      <li class="testi-list-item">
+        <div class="testi-list-container-text">
+          <p class="testi-list-item-text">
+            YogaBloom helped me reconnect with myself. The sessions are
+            well-paced, the space is beautiful, and the community is truly
+            supportive. A perfect place to grow both physically and mentally.
+          </p>
+        </div>
+        <div class="testi-container-card">
+          <img
+            class="testi-container-card-foto"
+            srcset="/project-group-07-fix/assets/rachel_kimura_1x-UyYTfo84.png 1x, /project-group-07-fix/assets/rachel_kimura_2x-Bj6yWRZQ.png 2x"
+            src="/project-group-07-fix/assets/rachel_kimura_1x-UyYTfo84.png"
+            alt="Portrait of Rachel Kimura"
+          />
+          <h3 class="testi-container-card-title">Rachel Kimura</h3>
+          <p class="testi-container-card-text">Freelance Illustrator</p>
+        </div>
+      </li>
+      <li class="testi-list-item">
+        <div class="testi-list-container-text">
+          <p class="testi-list-item-text">
+            Whether you're new to yoga or a long-time practitioner, YogaBloom
+            offers something special. The mindful approach and soothing guidance
+            make each class a peaceful escape from <br />
+            daily stress.
+          </p>
+        </div>
+        <div class="testi-container-card">
+          <img
+            class="testi-container-card-foto"
+            srcset="/project-group-07-fix/assets/emma_l._hart_1x-D5uqQCG6.png 1x, /project-group-07-fix/assets/emma_l._hart_2x-D9AAyNxZ.png 2x"
+            src="/project-group-07-fix/assets/emma_l._hart_1x-D5uqQCG6.png"
+            alt="Portrait of Emma L.Hart"
+          />
+          <h3 class="testi-container-card-title">Emma L. Hart</h3>
+          <p class="testi-container-card-text">
+            University Student & Part-time Barista
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="pricing section" id="pricing">
+  <div class="container">
+    <div class="pricing-title-box">
+      <p class="pricing-subtitle">Affordable</p>
+      <h2 class="pricing-title">Pricing Plans</h2>
+      <p class="pricing-description">
+        Choose the perfect plan for your yoga journey.
+      </p>
+    </div>
+    <ul class="pricing-list">
+      <li class="pricing-list-item">
+        <h4 class="pricing-list-box-title">One Session</h4>
+        <p class="pricing-list-box-price">$10</p>
+        <ul class="pricing-list-box-sublist">
+          <li class="pricing-list-box-sublist-item">
+            <svg class="pricing-list-box-sublist-icon" width="24" height="24">
+              <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-checked"></use>
+            </svg>
+            <p class="pricing-list-box-sublist-text">1 group session</p>
+          </li>
+          <li class="pricing-list-box-sublist-item">
+            <svg class="pricing-list-box-sublist-icon" width="24" height="24">
+              <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-checked"></use>
+            </svg>
+            <p class="pricing-list-box-sublist-text">
+              10% discount for next 2 Sessions
+            </p>
+          </li>
+          <li class="pricing-list-box-sublist-item">
+            <svg class="pricing-list-box-sublist-icon" width="24" height="24">
+              <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-checked"></use>
+            </svg>
+            <p class="pricing-list-box-sublist-text">Community support group</p>
+          </li>
+        </ul>
+        <button
+          class="pricing-list-box-sublist-button"
+          type="button"
+          data-modal-open-10
+        >
+          Join
+        </button>
+      </li>
+      <li class="pricing-list-item">
+        <h4 class="pricing-list-box-title">8 Sessions Package</h4>
+        <p class="pricing-list-box-price">$65</p>
+        <ul class="pricing-list-box-sublist">
+          <li class="pricing-list-box-sublist-item">
+            <svg class="pricing-list-box-sublist-icon" width="24" height="24">
+              <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-checked"></use>
+            </svg>
+            <p class="pricing-list-box-sublist-text">6 Group Sessions</p>
+          </li>
+          <li class="pricing-list-box-sublist-item">
+            <svg class="pricing-list-box-sublist-icon" width="24" height="24">
+              <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-checked"></use>
+            </svg>
+            <p class="pricing-list-box-sublist-text">2 Individual Sessions</p>
+          </li>
+          <li class="pricing-list-box-sublist-item">
+            <svg class="pricing-list-box-sublist-icon" width="24" height="24">
+              <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-checked"></use>
+            </svg>
+            <p class="pricing-list-box-sublist-text">
+              Priority customer support
+            </p>
+          </li>
+        </ul>
+        <button
+          class="pricing-list-box-sublist-button"
+          type="button"
+          data-modal-open-65
+        >
+          Join
+        </button>
+      </li>
+      <li class="pricing-list-item pricing-mobile-and-desktop">
+        <h4 class="pricing-list-box-title">12 Sessions Package</h4>
+        <p class="pricing-list-box-price">$80</p>
+        <ul class="pricing-list-box-sublist">
+          <li class="pricing-list-box-sublist-item">
+            <svg class="pricing-list-box-sublist-icon" width="24" height="24">
+              <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-checked"></use>
+            </svg>
+            <p class="pricing-list-box-sublist-text">8 Group Sessions</p>
+          </li>
+          <li class="pricing-list-box-sublist-item">
+            <svg class="pricing-list-box-sublist-icon" width="24" height="24">
+              <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-checked"></use>
+            </svg>
+            <p class="pricing-list-box-sublist-text">4 Individual Sessions</p>
+          </li>
+          <li class="pricing-list-box-sublist-item">
+            <svg class="pricing-list-box-sublist-icon" width="24" height="24">
+              <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-checked"></use>
+            </svg>
+            <p class="pricing-list-box-sublist-text">Monthly yoga challenges</p>
+          </li>
+          <li class="pricing-list-box-sublist-item">
+            <svg class="pricing-list-box-sublist-icon" width="24" height="24">
+              <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-checked"></use>
+            </svg>
+            <p class="pricing-list-box-sublist-text">
+              Exclusive member discounts
+            </p>
+          </li>
+          <li class="pricing-list-box-sublist-item">
+            <svg class="pricing-list-box-sublist-icon" width="24" height="24">
+              <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-checked"></use>
+            </svg>
+            <p class="pricing-list-box-sublist-text">Community support group</p>
+          </li>
+        </ul>
+        <button
+          class="pricing-list-box-sublist-button"
+          type="button"
+          data-modal-open-80
+        >
+          Join
+        </button>
+      </li>
+      <!-- last card for tablet version -->
+      <li class="pricing-list-item pricing-tablet">
+        <div class="pricing-tablet-text-box">
+          <h4 class="pricing-list-box-title">12 Sessions Package</h4>
+          <p class="pricing-list-box-price">$80</p>
+          <button
+            class="pricing-list-box-sublist-button"
+            type="button"
+            data-modal-open-80-tab
+          >
+            Join
+          </button>
+        </div>
+        <ul class="pricing-list-box-sublist">
+          <li class="pricing-list-box-sublist-item">
+            <svg class="pricing-list-box-sublist-icon" width="24" height="24">
+              <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-checked"></use>
+            </svg>
+            <p class="pricing-list-box-sublist-text">8 Group Sessions</p>
+          </li>
+          <li class="pricing-list-box-sublist-item">
+            <svg class="pricing-list-box-sublist-icon" width="24" height="24">
+              <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-checked"></use>
+            </svg>
+            <p class="pricing-list-box-sublist-text">4 Individual Sessions</p>
+          </li>
+          <li class="pricing-list-box-sublist-item">
+            <svg class="pricing-list-box-sublist-icon" width="24" height="24">
+              <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-checked"></use>
+            </svg>
+            <p class="pricing-list-box-sublist-text">Monthly yoga challenges</p>
+          </li>
+          <li class="pricing-list-box-sublist-item">
+            <svg class="pricing-list-box-sublist-icon" width="24" height="24">
+              <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-checked"></use>
+            </svg>
+            <p class="pricing-list-box-sublist-text">
+              Exclusive member discounts
+            </p>
+          </li>
+          <li class="pricing-list-box-sublist-item">
+            <svg class="pricing-list-box-sublist-icon" width="24" height="24">
+              <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-checked"></use>
+            </svg>
+            <p class="pricing-list-box-sublist-text">Community support group</p>
+          </li>
+        </ul>
+      </li>
+      <!-- end last card for tablet version-->
+    </ul>
+  </div>
+</section>
+
+      <div class="modal-overlay" data-modal-10>
+  <div class="backdrope" data-modal-backdrope-close-10></div>
+  <div class="modal">
+    <button class="modal-button-close" type="button" data-modal-close-10>
+      <svg class="modal-button-close-icon" width="14px" height="14px">
+        <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal-description-box">
+      <h2 class="modal-title">Join Now!</h2>
+      <p class="modal-description">One Session</p>
+      <p class="modal-price">$10</p>
+    </div>
+    <form class="modal-form" action="#">
+      <ul class="modal-form-list">
+        <li class="modal-form-list-item">
+          <label class="modal-form-label" for="user-name-10">Your Name</label
+          ><input
+            class="modal-form-input"
+            id="user-name-10"
+            name="eser-name"
+            type="text"
+            placeholder="Name"
+          />
+        </li>
+        <li class="modal-form-list-item">
+          <label class="modal-form-label" for="user-email-10">Email</label
+          ><input
+            class="modal-form-input"
+            id="user-email-10"
+            name="user-email"
+            type="email"
+            placeholder="name@mail.com"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          />
+          <p class="modal-form-text-invalid">Invalid email, try again</p>
+        </li>
+        <li class="modal-form-list-item">
+          <label class="modal-form-label" for="user-phone-10"
+            >Phone number</label
+          ><input
+            class="modal-form-input"
+            id="user-phone-10"
+            name="user-phone"
+            type="tel"
+            placeholder="+380"
+            minlength="13"
+            maxlength="13"
+            required
+          />
+          <p class="modal-form-text-invalid">Invalid phone number, try again</p>
+        </li>
+      </ul>
+      <button class="modal-button-checkout" type="submit">
+        Go to checkout
+      </button>
+    </form>
+  </div>
+</div>
+
+<div class="modal-overlay" data-modal-65>
+  <div class="backdrope" data-modal-backdrope-close-65></div>
+  <div class="modal">
+    <button class="modal-button-close" type="button" data-modal-close-65>
+      <svg class="modal-button-close-icon" width="14px" height="14px">
+        <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal-description-box">
+      <h2 class="modal-title">Join Now!</h2>
+      <p class="modal-description">One Session</p>
+      <p class="modal-price">$65</p>
+    </div>
+    <form class="modal-form" action="#">
+      <ul class="modal-form-list">
+        <li class="modal-form-list-item">
+          <label class="modal-form-label" for="user-name-65">Your Name</label
+          ><input
+            class="modal-form-input"
+            id="user-name-65"
+            name="eser-name"
+            type="text"
+            placeholder="Name"
+          />
+        </li>
+        <li class="modal-form-list-item">
+          <label class="modal-form-label" for="user-email-65">Email</label
+          ><input
+            class="modal-form-input"
+            id="user-email-65"
+            name="user-email"
+            type="email"
+            placeholder="name@mail.com"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          />
+          <p class="modal-form-text-invalid">Invalid email, try again</p>
+        </li>
+        <li class="modal-form-list-item">
+          <label class="modal-form-label" for="user-phone-65"
+            >Phone number</label
+          ><input
+            class="modal-form-input"
+            id="user-phone-65"
+            name="user-phone"
+            type="tel"
+            placeholder="+380"
+            minlength="13"
+            maxlength="13"
+            required
+          />
+          <p class="modal-form-text-invalid">Invalid phone number, try again</p>
+        </li>
+      </ul>
+      <button class="modal-button-checkout" type="submit">
+        Go to checkout
+      </button>
+    </form>
+  </div>
+</div>
+
+<div class="modal-overlay" data-modal-80>
+  <div class="backdrope" data-modal-backdrope-close-80></div>
+  <div class="modal">
+    <button class="modal-button-close" type="button" data-modal-close-80>
+      <svg class="modal-button-close-icon" width="14px" height="14px">
+        <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal-description-box">
+      <h2 class="modal-title">Join Now!</h2>
+      <p class="modal-description">One Session</p>
+      <p class="modal-price">$80</p>
+    </div>
+    <form class="modal-form" action="#">
+      <ul class="modal-form-list">
+        <li class="modal-form-list-item">
+          <label class="modal-form-label" for="user-name-80">Your Name</label
+          ><input
+            class="modal-form-input"
+            id="user-name-80"
+            name="eser-name"
+            type="text"
+            placeholder="Name"
+          />
+        </li>
+        <li class="modal-form-list-item">
+          <label class="modal-form-label" for="user-email-80">Email</label
+          ><input
+            class="modal-form-input"
+            id="user-email-80"
+            name="user-email"
+            type="email"
+            placeholder="name@mail.com"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          />
+          <p class="modal-form-text-invalid">Invalid email, try again</p>
+        </li>
+        <li class="modal-form-list-item">
+          <label class="modal-form-label" for="user-phone-80"
+            >Phone number</label
+          ><input
+            class="modal-form-input"
+            id="user-phone-80"
+            name="user-phone"
+            type="tel"
+            placeholder="+380"
+            minlength="13"
+            maxlength="13"
+            required
+          />
+          <p class="modal-form-text-invalid">Invalid phone number, try again</p>
+        </li>
+      </ul>
+      <button class="modal-button-checkout" type="submit">
+        Go to checkout
+      </button>
+    </form>
+  </div>
+</div>
 
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <div class="sub-container">
+      <div class="footer-newsletter">
+        <div class="footer-logo">
+          <svg class="icon" width="84" height="36">
+            <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-logo"></use>
+          </svg>
+        </div>
+        <p class="footer-subscribe-label">
+          Subscribe to our newsletter for the latest updates on our yoga clases
+          and events.
+        </p>
+        <div class="footer-form-wraper">
+          <form class="footer-subscribe-form">
+            <div class="footer-subscribe-label">
+              <input
+                class="footer-subscribe-input"
+                name="subscribe-email"
+                id="subscribe-email"
+                type="email"
+                placeholder="E-mail"
+                required
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              />
+              <p class="footer-input-error-text">Invalid email, try again</p>
+            </div>
+            <button type="submit" class="footer-subscribe-btn">Join</button>
+          </form>
+          <p class="footer-subscribe-policy">
+            By subscribing, you consent to our Privacy Policy and agree to
+            receive updates.
+          </p>
+        </div>
+      </div>
+      <div class="footer-link">
+        <div class="footer-quick-links">
+          <p class="footer-quick-links-title">Quick Links</p>
+          <ul class="footer-quick-links-list">
+            <li class="footer-quick-links-item">
+              <a class="link" href="#yoga-classes">Yoga Classes</a>
+            </li>
+            <li class="footer-quick-links-item">
+              <a class="link" href="#team">Team</a>
+            </li>
+            <li class="footer-quick-links-item">
+              <a class="link" href="#pricing">Pricing</a>
+            </li>
+            <li class="footer-quick-links-item">
+              <a class="link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-media" id="contacts">
+          <p class="footer-media-title">Connect With Us</p>
+          <ul class="footer-media-list">
+            <li class="footer-media-item">
+              <a class="link" href="https://www.facebook.com" target="_blank">
+                <svg class="icon" width="24" height="24">
+                  <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-facebook"></use>
+                </svg>
+                Facebook</a
+              >
+            </li>
+            <li class="footer-media-item">
+              <a class="link" href="https://www.instagram.com" target="_blank">
+                <svg class="icon" width="24" height="24">
+                  <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-instagram"></use>
+                </svg>
+                Instagram</a
+              >
+            </li>
+            <li class="footer-media-item">
+              <a class="link" href="https://www.linkedin.com" target="_blank">
+                <svg class="icon" width="24" height="24">
+                  <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-linkedin"></use>
+                </svg>
+                LinkedIn</a
+              >
+            </li>
+            <li class="footer-media-item">
+              <a class="link" href="https://www.youtube.com/" target="_blank">
+                <svg class="icon" width="24" height="24">
+                  <use href="/project-group-07-fix/assets/sprite-D6fp04Ux.svg#icon-play"></use>
+                </svg>
+                YouTube</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-copyright">© 2025 Yoga Studio. All rights reserved.</p>
+    </div>
   </div>
 </footer>
 
