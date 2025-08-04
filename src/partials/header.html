@@ -1,19 +1,113 @@
-<header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+<header class="page-header">
+  <div class="container header-style">
+    <button class="header-menu-btn" data-menu-open type="button">
+      <svg class="burger-btn-icon" width="24" height="24">
+        <use href="/img/sprite.svg#icon-menu"></use>
+      </svg>
+    </button>
+    <ul class="header-menu-nav-list">
+      <li class="header-menu-nav-item">
+        <a class="header-nav-link active" href="#yoga-classes">Yoga Classes</a>
+      </li>
+      <li class="header-menu-nav-item">
+        <a class="header-nav-link active" href="#team">Team</a>
+      </li>
+      <li class="header-menu-nav-item">
+        <a class="header-nav-link active" href="#testimonials">Testimonials</a>
+      </li>
+      <li class="header-menu-nav-item">
+        <a class="header-nav-link active" href="#pricing">Pricing</a>
+      </li>
+      <li class="header-menu-nav-item">
+        <a class="header-nav-link active" href="#contacts">Contacts</a>
+      </li>
+    </ul>
+    <a class="header-logo" href="./index.html">
+      <svg class="" width="84" height="36">
+        <use href="/img/sprite.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <a class="header-anchor-link" href="#pricing"
+      >Join <span class="header-span-wrap">Now</span>
+    </a>
+  </div>
+  <div class="mobile-menu" data-menu>
+    <div class="container mobile-menu-container">
+      <div class="mobile-style">
+        <button class="button-close" data-menu-close type="button">
+          <svg class="button-close-icon" width="12" height="12">
+            <use href="/img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <a class="header-logo" href="./index.html">
+          <svg class="" width="84" height="36">
+            <use href="/img/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <a
+          class="header-anchor-link"
+          href="#pricing"
+          target=""
+          rel="noopener noreferrer"
+          >Join <span class="header-span-wrap">Now</span></a
+        >
+      </div>
+      <div class="mobile-menu-list-wrap">
+        <ul class="burger-menu-nav-list">
+          <li class="burger-menu-nav-item">
+            <a
+              class="mobile-nav-link"
+              href="#yoga-classes"
+              target=""
+              data-menu-close-link-1
+              >Yoga Classes</a
+            >
+          </li>
+          <li class="burger-menu-nav-item">
+            <a
+              class="mobile-nav-link"
+              href="#team"
+              target=""
+              data-menu-close-link-2
+              >Team</a
+            >
+          </li>
+          <li class="burger-menu-nav-item">
+            <a
+              class="mobile-nav-link"
+              href="#testimonials"
+              target=""
+              data-menu-close-link-3
+              >Testimonialso</a
+            >
+          </li>
+          <li class="burger-menu-nav-item">
+            <a
+              class="mobile-nav-link"
+              href="#pricing"
+              target=""
+              data-menu-close-link-4
+              >Pricing</a
+            >
+          </li>
+          <li class="burger-menu-nav-item">
+            <a
+              class="mobile-nav-link"
+              href="#contacts"
+              target=""
+              data-menu-close-link-5
+              >Contacts</a
+            >
+          </li>
+        </ul>
+        <a
+          class="header-anchor-link menu"
+          href="#pricing"
+          target=""
+          rel="noopener noreferrer"
+          >Join Now</a
+        >
+      </div>
+    </div>
   </div>
 </header>
